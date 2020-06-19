@@ -35,10 +35,20 @@ a {
   clip: rect(0 0 0 0)
 }
 
+.basket-items__image-wrapper {
+  width: 33px;
+  height: 33px;
+}
+
 .hit-items__icecream-img-wrapper,
-.icecream-catalog-img-wrapper {
+.icecream-catalog__img-wrapper {
   width: 267px;
   height: 267px;
+}
+
+.hit-items__icecream-img-wrapper,
+.icecream-catalog__img-wrapper,
+.basket-items__image-wrapper {
   border-radius: 50%;
   overflow: hidden;
 }
