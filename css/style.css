@@ -13,6 +13,7 @@ html {
 body {
   padding: 0;
   margin: 0;
+  background-color: #849D8F;
 }
 
 img {
@@ -32,4 +33,12 @@ a {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0)
+}
+
+.hit-items__icecream-img-wrapper,
+.icecream-catalog-img-wrapper {
+  width: 267px;
+  height: 267px;
+  border-radius: 50%;
+  overflow: hidden;
 }
