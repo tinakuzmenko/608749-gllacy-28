@@ -9,20 +9,28 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="main-page">
     <header class="page-header">
       <h1 class="visually-hidden">Интернет-магазин мороженного "Глейси"</h1>
+      <a
+        ><img
+          src="/img/svg/logo.svg"
+          width="154"
+          height="64"
+          alt="Логотип Глейси"
+      /></a>
       <nav class="page-header__nav">
-        <a href="">Логотип</a>
         <ul class="page-header__nav-list">
           <li class="page-header__nav-list-item">
-            <a href="catalog.html">Каталог</a>
+            <a href="">Каталог</a>
             <ul class="page-header__nav-hidden-list">
               <li class="page-header__nav-hidden-item">
                 <a href="" class="page-header__nav-hidden-link">Новинки</a>
               </li>
               <li class="page-header__nav-hidden-item">
-                <a href="" class="page-header__nav-hidden-link">Сливочное</a>
+                <a href="catalog.html" class="page-header__nav-hidden-link"
+                  >Сливочное</a
+                >
               </li>
               <li class="page-header__nav-hidden-item">
                 <a href="" class="page-header__nav-hidden-link">Щербеты</a>
@@ -93,16 +101,45 @@
           >8 812 450-25-25</a
         >
       </div>
-      <div class="page-header__slider slider">
+    </header>
+    <main>
+      <section class="slider">
         <div class="slider__item">
+          <div class="slider-image-wrapper">
+            <img
+              class="slider-image"
+              src="/img/icecream-slide-1.png"
+              alt="Крем-брюле и пломбир с малиновым джемом"
+              width="647"
+              height="584"
+            />
+          </div>
           <p class="slider__title">Крем-брюле и пломбир с малиновым джемом</p>
           <a class="slider__cta-button" href="">Давайте оба!</a>
         </div>
         <div class="slider__item">
+          <div class="slider-image-wrapper">
+            <img
+              class="slider-image"
+              src="/img/icecream-slide-2.png"
+              alt="Крем-брюле и пломбир с малиновым джемом"
+              width="644"
+              height="582"
+            />
+          </div>
           <p class="slider__title">Шоколадный пломбир и лимонный сорбет</p>
           <a class="slider__cta-button" href="">Давайте оба!</a>
         </div>
         <div class="slider__item">
+          <div class="slider-image-wrapper">
+            <img
+              class="slider-image"
+              src="/img/icecream-slide-3.png"
+              alt="Крем-брюле и пломбир с малиновым джемом"
+              width="639"
+              height="582"
+            />
+          </div>
           <p class="slider__title">Пломбир с помадкой и клубничный щербет</p>
           <a class="slider__cta-button" href="">Давайте оба!</a>
         </div>
@@ -117,9 +154,7 @@
             Переключение слайда
           </button>
         </div>
-      </div>
-    </header>
-    <main>
+      </section>
       <section class="promo">
         <h2 class="visually-hidden">Новости и акции</h2>
         <div class="promo-block">
@@ -142,12 +177,14 @@
       <section class="hit-items">
         <h2 class="visually-hidden">Хиты продаж</h2>
         <div class="hit-items__icecream-item">
-          <img
-            src="https://via.placeholder.com/267x267"
-            alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"
-            width="267"
-            height="267"
-          />
+          <div class="hit-items__icecream-img-wrapper">
+            <img
+              src="/img/item-1.jpg"
+              alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"
+              width="267"
+              height="267"
+            />
+          </div>
           <p>310 ₽<span>/кг</span></p>
           <a href=""
             ><h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3></a
@@ -155,23 +192,27 @@
           <a href="">Быстрый просмотр</a>
         </div>
         <div class="hit-items__icecream-item">
-          <img
-            src="https://via.placeholder.com/267x267"
-            alt="Сливочно-кофейное с кусочками шоколада"
-            width="267"
-            height="267"
-          />
+          <div class="hit-items__icecream-img-wrapper">
+            <img
+              src="/img/item-2.jpg"
+              alt="Сливочно-кофейное с кусочками шоколада"
+              width="267"
+              height="267"
+            />
+          </div>
           <p>380 ₽<span>/кг</span></p>
           <a href=""><h3>Сливочно-кофейное с кусочками шоколада</h3></a>
           <a href="">Быстрый просмотр</a>
         </div>
         <div class="hit-items__icecream-item">
-          <img
-            src="https://via.placeholder.com/267x267"
-            alt="Сливочно-клубничное с присыпкой из белого шоколада"
-            width="267"
-            height="267"
-          />
+          <div class="hit-items__icecream-img-wrapper">
+            <img
+              src="/img/item-3.jpg"
+              alt="Сливочно-клубничное с присыпкой из белого шоколада"
+              width="267"
+              height="267"
+            />
+          </div>
           <p>355 ₽<span>/кг</span></p>
           <a href=""
             ><h3>Сливочно-клубничное с присыпкой из белого шоколада</h3></a
@@ -179,12 +220,14 @@
           <a href="">Быстрый просмотр</a>
         </div>
         <div class="hit-items__icecream-item">
-          <img
-            src="https://via.placeholder.com/267x267"
-            alt="Сливочное крем-брюле с карамельной подливкой "
-            width="267"
-            height="267"
-          />
+          <div class="hit-items__icecream-img-wrapper">
+            <img
+              src="/img/item-4.jpg"
+              alt="Сливочное крем-брюле с карамельной подливкой "
+              width="267"
+              height="267"
+            />
+          </div>
           <p>415 ₽<span>/кг</span></p>
           <a href=""><h3>Сливочное крем-брюле с карамельной подливкой</h3></a>
           <a href="">Быстрый просмотр</a>
@@ -288,8 +331,16 @@
       </nav>
       <section class="page-footer__copyright">
         <h2 class="visually-hidden">Разработка</h2>
-        <a href="">HTML Academy Logo</a>
-        <p>Сделано в <a href="">HTML Academy</a> © 2019</p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"
+          >HTML Academy Logo</a
+        >
+        <p>
+          Сделано в
+          <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"
+            >HTML Academy</a
+          >
+          © 2019
+        </p>
       </section>
     </footer>
     <div class="feedback-form visually-hidden">
