@@ -55,20 +55,22 @@
       </nav>
       <div class="page-header__user-block">
         <div class="page-header__search-wrapper search">
-          <label class="page-header__search-label" for="search-input"
-            >Поиск по сайту</label
-          >
-          <input
-            class="page-header__search-input"
-            type="search"
-            id="search-input"
-            placeholder="Крем-брюле"
-          />
+          <form action="https://echo.htmlacademy.ru/" method="GET">
+            <label class="page-header__search-label" for="search-input"
+              >Поиск по сайту</label
+            >
+            <input
+              class="page-header__search-input"
+              type="search"
+              id="search-input"
+              placeholder="Крем-брюле"
+            />
+          </form>
         </div>
         <div class="page-header__login-wrapper">
           <a href="">Вход</a>
           <div class="page-header__login-form login-form">
-            <form action="post">
+            <form action="https://echo.htmlacademy.ru/" method="POST">
               <label class="visually-hidden" for="email-input"
                 >Ваш e-mail:</label
               >
@@ -298,7 +300,7 @@
         <p>Для заказов по телефону:</p>
         <a href="tel:+88124502525">8 812 450-25-25</a>
         <p>(с 10 до 20 ежедневно)</p>
-        <button type="button">Форма обратной связи</button>
+        <a href="">Форма обратной связи</a>
       </section>
     </main>
     <footer class="page-footer">
@@ -340,8 +342,13 @@
       <section class="page-footer__copyright">
         <h2 class="visually-hidden">Разработка</h2>
         <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"
-          >HTML Academy Logo</a
-        >
+          ><img
+            src="/img/svg/logo-htmlacademy.svg"
+            alt="Логотип HTML Academy"
+            width="108"
+            height="39"
+        /></a>
+
         <p>
           Сделано в
           <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"
@@ -356,7 +363,7 @@
       <button type="button">
         Закрыть
       </button>
-      <form action="post">
+      <form action="https://echo.htmlacademy.ru/" method="POST">
         <label class="visually-hidden" for="user-name">Ваше имя</label>
         <input
           type="text"
