@@ -1,3 +1,40 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/robotomedium.woff2") format("woff2"),
+        url("../fonts/robotomedium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto.woff2") format("woff2"),
+        url("../fonts/roboto.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/robotobold.woff2") format("woff2"),
+        url("../fonts/robotobold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+  --bg-primary-color: #849D8F;
+  --bg-secondary-color: #8996A6;
+  --bg-third-color: #9D8B84;
+  --primary-font-color: #ffffff;
+  --secondary-font-color: #323232;
+
+  --main-font: "Roboto", "Arial", sans-serif;
+}
+
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -13,7 +50,9 @@ html {
 body {
   padding: 0;
   margin: 0;
-  background-color: #849D8F;
+  background-color: var(--bg-primary-color);
+  font-family: var(--main-font);
+  color: var(--primary-font-color);
 }
 
 img {
