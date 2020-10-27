@@ -1,0 +1,9 @@
+.hit-items {
+  padding-top: 40px;
+}
+
+.hit-items__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 26px;
+}

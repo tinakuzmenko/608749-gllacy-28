@@ -1,0 +1,32 @@
+.about-us {
+  color: var(--secondary-font-color);
+}
+
+.about-us__wrapper {
+  background-color: rgb(218, 218, 165);
+  background-image: url("../img/waffel-pattern.png");
+  background-repeat: repeat;
+  border-radius: 16px;
+  padding: 24px 24px 32px 20px;
+}
+
+.about-us__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 0;
+}
+
+.about-us__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.about-us__items {
+  line-height: 22px;
+}

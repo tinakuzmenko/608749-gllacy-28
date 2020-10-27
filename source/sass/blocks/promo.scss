@@ -1,0 +1,47 @@
+.promo__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 26px;
+}
+
+.promo-block {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 16px;
+  padding-bottom: 22px;
+  border-radius: 16px;
+}
+
+.promo-block--berry {
+  background-image: url("../img/bg-berries.png");
+}
+
+.promo-block--chocolade {
+  background-image: url("../img/bg-chocolate.png");
+}
+
+.promo-block__title {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.promo-block__description {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 0;
+  margin-bottom: 42px;
+}
+
+.promo-block__cta-button {
+  width: 164px;
+  height: 48px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  margin-left: auto;
+}

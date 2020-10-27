@@ -1,0 +1,44 @@
+.page-header {
+  padding-top: 9px;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__user-block {
+  display: flex;
+}
+
+.page-header__search-input {
+  display: none;
+}
+
+.page-header__login-form {
+  display: none;
+}
+
+.page-header__schedule-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.page-header__schedule {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.page-header__phone {
+  color: var(--primary-font-color);
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.page-header__top-row {
+  display: flex;
+}

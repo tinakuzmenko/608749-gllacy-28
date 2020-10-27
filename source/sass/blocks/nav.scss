@@ -1,0 +1,42 @@
+.nav {
+  display: flex;
+}
+
+.nav__list,
+.nav__hidden-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__list-item {
+  margin-right: 32px;
+}
+
+.nav__list-item:last-child {
+  margin-right: 0;
+}
+
+.nav__hidden-list {
+  display: none;
+}
+
+.nav__list-link {
+  color: var(--primary-font-color);
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.nav__list-link--active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 89px;
+  height: 31px;
+  background: #d07058;
+  border-radius: 26px;
+}
