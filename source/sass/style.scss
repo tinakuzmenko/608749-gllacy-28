@@ -1,10 +1,15 @@
+@import "./variables";
 @import "./font-face";
 @import "./global";
+@import "./mixins";
+@import "./blocks/main-page";
 @import "./blocks/visually-hidden";
 @import "./blocks/container";
 @import "./blocks/cta-button";
 @import "./blocks/page-header";
 @import "./blocks/nav";
+@import "./blocks/page-header-button";
+@import "./blocks/search";
 @import "./blocks/login";
 @import "./blocks/basket";
 @import "./blocks/slider";
@@ -12,28 +17,14 @@
 @import "./blocks/hit-items";
 @import "./blocks/about-us";
 @import "./blocks/news";
-@import "./blocks/new-in-block";
+@import "./blocks/new-in-blog";
 @import "./blocks/contact-us";
 @import "./blocks/map";
+@import "./blocks/page-footer";
 @import "./blocks/social-list";
 @import "./blocks/breadcrumbs";
 @import "./blocks/filter-form";
 @import "./blocks/pagination";
-
-.login__link,
-.basket__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 92px;
-  height: 32px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
-  color: var(--primary-font-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-}
 
 .hit-items__icecream-img-wrapper,
 .icecream-catalog__img-wrapper {
@@ -64,7 +55,7 @@
 
 .hit-items__item-title,
 .icecream-catalog__item-title {
-  color: var(--primary-font-color);
+  color: $primary-font-color;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
@@ -76,31 +67,4 @@
   display: none;
   width: 200px;
   height: 44px;
-}
-
-
-.footer-navigation__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.footer-navigation__link {
-  color: var(--primary-font-color);
-  font-size: 13px;
-  line-height: 18px;
-}
-
-.footer-navigation__link--resellers {
-  font-weight: bold;
-}
-
-.page-footer__developers {
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.page-footer__developers--academy {
-  color: var(--primary-font-color);
-  text-decoration: underline;
 }

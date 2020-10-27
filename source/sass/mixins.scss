@@ -1,0 +1,12 @@
+@mixin pseudo() {
+  content: "";
+  position: absolute;
+}
+
+@mixin highlight($bg-color, $overlay-color) {
+  background-color: $bg-color;
+
+  &:before {
+    background-color: rgba($overlay-color, 0.75);
+  }
+}

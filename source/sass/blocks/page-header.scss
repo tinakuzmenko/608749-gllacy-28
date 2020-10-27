@@ -12,6 +12,10 @@
   display: flex;
 }
 
+.page-header__search {
+  display: none;
+}
+
 .page-header__search-input {
   display: none;
 }
@@ -30,10 +34,12 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .page-header__phone {
-  color: var(--primary-font-color);
+  color: $primary-font-color;
   font-weight: bold;
   font-size: 22px;
   line-height: 24px;

@@ -5,8 +5,8 @@
     <title>HTML Academy: Глейси - Каталог</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="format-detection" content="telephone=no" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="vendors/normalize.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
     <header class="page-header">
@@ -54,24 +54,8 @@
         </ul>
       </nav>
       <div class="page-header__user-block">
-        <div class="page-header__search-wrapper search">
-          <form action="https://echo.htmlacademy.ru/" method="GET">
-            <label
-              class="page-header__search-label"
-              for="search-input"
-              aria-label="Поиск по сайту"
-              >Кнопка поиска</label
-            >
-            <input
-              class="page-header__search-input"
-              type="search"
-              id="search-input"
-              placeholder="Крем-брюле"
-            />
-          </form>
-        </div>
         <div class="page-header__login-wrapper login">
-          <a class="login__link" href="">Вход</a>
+          <a class="login__link page-header-button" href="">Вход</a>
           <div class="login__form">
             <form action="https://echo.htmlacademy.ru/" method="POST">
               <label class="visually-hidden" for="email-input"
@@ -95,6 +79,22 @@
               <button type="submit">Войти</button>
               <a href="">Забыли пароль?</a>
               <a href="">Новая регистрация</a>
+            </form>
+          </div>
+          <div class="page-header__search search">
+            <form action="https://echo.htmlacademy.ru/" method="GET">
+              <label
+                class="visually-hidden"
+                for="search-input"
+                aria-label="Поиск по сайту"
+                >Поиск по сайту</label
+              >
+              <input
+                class="page-header__search-input"
+                type="search"
+                id="search-input"
+                placeholder="Крем-брюле"
+              />
             </form>
           </div>
         </div>

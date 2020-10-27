@@ -1,12 +1,21 @@
 .map {
-  position: relative;
+  background-image: url("../../img/google-map.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 430px;
 }
 
 .map__contacts-block {
   width: 303px;
   border-radius: 16px;
   background-color: #fefefe;
-  color: var(--secondary-font-color);
+  color: $secondary-font-color;
+  margin-left: auto;
+  margin-top: -400px;
+  position: relative;
+  z-index: 1000;
+  padding: 32px 25px;
 }
 
 .map__contacts-address-description {
@@ -30,7 +39,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  color: var(--secondary-font-color);
+  color: $secondary-font-color;
 }
 
 .map__contacts-cta-button {

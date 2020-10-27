@@ -1,0 +1,35 @@
+.page-footer {
+  padding: 18px 27px 25px 29px;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-footer__developers {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.page-footer__developers--academy {
+  color: $primary-font-color;
+  text-decoration: underline;
+}
+
+.page-footer__navigation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page-footer__navigation-link {
+  color: $primary-font-color;
+  font-size: 13px;
+  line-height: 18px;
+
+  &--resellers {
+    font-weight: bold;
+  }
+}

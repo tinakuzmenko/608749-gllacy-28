@@ -1,0 +1,27 @@
+.main-page {
+  position: relative;
+
+  &::before {
+    @include pseudo;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 0;
+    width: 716px;
+    height: 716px;
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(250px);
+  }
+
+  &--primary {
+    @include highlight($bg-primary-color, $overlay-primary-color);
+  }
+
+  &--secondary {
+    @include highlight($bg-secondary-color, $overlay-secondary-color);
+  }
+
+  &--third {
+    @include highlight($bg-third-color, $overlay-third-color);
+  }
+}

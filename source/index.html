@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="vendors/normalize.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
-  <body class="main-page">
+  <body class="main-page main-page--primary">
     <header class="page-header">
       <div class="container">
         <h1 class="visually-hidden">Интернет-магазин мороженного "Глейси"</h1>
@@ -55,12 +55,22 @@
           </nav>
           <div class="page-header__user-block">
             <div class="page-header__search-wrapper search">
-              <form action="https://echo.htmlacademy.ru/" method="GET">
+              <button
+                class="page-header-button page-header-button--search"
+                type="button"
+              >
+                <span class="visually-hidden">Искать на сайте</span>
+              </button>
+              <form
+                class="page-header__search search"
+                action="https://echo.htmlacademy.ru/"
+                method="GET"
+              >
                 <label
                   class="search__label"
                   for="search-input"
                   aria-label="Поиск по сайту"
-                  >Кнопка поиска</label
+                  >Поиск по сайту</label
                 >
                 <input
                   class="search__input"
@@ -71,35 +81,37 @@
               </form>
             </div>
             <div class="page-header__login-wrapper login">
-              <a class="login__link" href="">Вход</a>
-              <div class="login__form">
-                <form action="https://echo.htmlacademy.ru/" method="POST">
-                  <label class="visually-hidden" for="email-input"
-                    >Ваш e-mail:</label
-                  >
-                  <input
-                    type="email"
-                    name="email"
-                    id="email-input"
-                    placeholder="email@example.com"
-                  />
-                  <label class="visually-hidden" for="password-input"
-                    >Ваш пароль:</label
-                  >
-                  <input
-                    type="password"
-                    name="password"
-                    id="password-input"
-                    placeholder="......"
-                  />
-                  <button type="submit">Войти</button>
-                  <a href="">Забыли пароль?</a>
-                  <a href="">Новая регистрация</a>
-                </form>
-              </div>
+              <a class="page-header-button" href="">Вход</a>
+              <form
+                class="login__form"
+                action="https://echo.htmlacademy.ru/"
+                method="POST"
+              >
+                <label class="visually-hidden" for="email-input"
+                  >Ваш e-mail:</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  id="email-input"
+                  placeholder="email@example.com"
+                />
+                <label class="visually-hidden" for="password-input"
+                  >Ваш пароль:</label
+                >
+                <input
+                  type="password"
+                  name="password"
+                  id="password-input"
+                  placeholder="......"
+                />
+                <button type="submit">Войти</button>
+                <a href="">Забыли пароль?</a>
+                <a href="">Новая регистрация</a>
+              </form>
             </div>
             <div class="page-header__basket-wrapper basket">
-              <a class="basket__button" href="">Пусто</a>
+              <a class="page-header-button" href="">Пусто</a>
             </div>
           </div>
         </div>
@@ -113,7 +125,7 @@
     </header>
     <main>
       <section class="slider">
-        <div class="container">
+        <div class="container slider__container">
           <div class="slider__item slider__item--active">
             <div class="slider__image-wrapper">
               <img
@@ -334,34 +346,41 @@
               >
             </article>
             <div class="contact-us">
-              <p class="contact-us__description">
-                Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе
-                всего самого вкусного, что у нас происходит. Обещаем не спамить
-                и не слать всякой ненужной ерунды. Честно =)
-              </p>
-              <form action="post">
-                <input
-                  class="contact-us__input"
-                  type="email"
-                  placeholder="email@example.com"
-                />
-                <button class="cta-button contact-us__cta-button" type="submit">
-                  Отправить
-                </button>
-              </form>
+              <div class="contact-us__main-wrapper">
+                <p class="contact-us__description">
+                  Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе
+                  всего самого вкусного, что у нас происходит. Обещаем не
+                  спамить и не слать всякой ненужной ерунды. Честно =)
+                </p>
+                <form class="contact-us__form" action="#" method="post">
+                  <input
+                    class="contact-us__input"
+                    type="email"
+                    placeholder="email@example.com"
+                  />
+                  <button
+                    class="cta-button contact-us__cta-button"
+                    type="submit"
+                  >
+                    Отправить
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section class="map">
-        <div class="map__image-wrapper">
-          <img
-            src="/img/google-map.png"
-            alt="Карта нашего офиса"
-            width="1200"
-            height="430"
-          />
-        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.60362530032!2d30.320858716194987!3d59.938719169054025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRltGPLCAxOTExODY!5e0!3m2!1suk!2snl!4v1603814765136!5m2!1suk!2snl"
+          width="100%"
+          height="430"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
         <div class="container">
           <div class="map__contacts-block">
             <h2 class="visually-hidden">Наши контакты</h2>
@@ -389,86 +408,98 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="page-footer__social">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="page-footer__social-list social-list">
-          <li class="social-list__item">
-            <a href="" class="social-list__button" aria-label="Facebook"
-              ><img src="./img/svg/fb.svg" alt="Facebook" with="32" height="32"
-            /></a>
-          </li>
-          <li class="social-list__item">
-            <a href="" class="social-list__button" aria-label="Vkontakte"
+      <div class="container">
+        <div class="page-footer__wrapper">
+          <section class="page-footer__social">
+            <h2 class="visually-hidden">Мы в социальных сетях</h2>
+            <ul class="page-footer__social-list social-list">
+              <li class="social-list__item">
+                <a href="" class="social-list__button" aria-label="Facebook"
+                  ><img
+                    src="./img/svg/fb.svg"
+                    alt="Facebook"
+                    with="32"
+                    height="32"
+                /></a>
+              </li>
+              <li class="social-list__item">
+                <a href="" class="social-list__button" aria-label="Vkontakte"
+                  ><img
+                    src="./img/svg/vk.svg"
+                    alt="Vkontakte"
+                    with="32"
+                    height="32"
+                /></a>
+              </li>
+              <li class="social-list__item">
+                <a href="" class="social-list__button" aria-label="Instagram"
+                  ><img
+                    src="./img/svg/instagram.svg"
+                    alt="Instagram"
+                    with="32"
+                    height="32"
+                /></a>
+              </li>
+              <li class="social-list__item">
+                <a href="" class="social-list__button" aria-label="Twitter"
+                  ><img
+                    src="./img/svg/twitter.svg"
+                    alt="Twitter"
+                    with="32"
+                    height="32"
+                /></a>
+              </li>
+            </ul>
+          </section>
+          <nav class="page-footer__navigation">
+            <ul class="page-footer__navigation-list">
+              <li class="page-footer__navigation-item">
+                <a
+                  href=""
+                  class="page-footer__navigation-link page-footer__navigation-link--resellers"
+                  >Для поставщиков</a
+                >
+              </li>
+              <li class="page-footer__navigation-item">
+                <a href="" class="page-footer__navigation-link"
+                  >Наши документы</a
+                >
+              </li>
+              <li class="page-footer__navigation-item">
+                <a href="" class="page-footer__navigation-link"
+                  >О производстве</a
+                >
+              </li>
+              <li class="page-footer__navigation-item">
+                <a href="" class="page-footer__navigation-link"
+                  >Экологические стандарты</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <section class="page-footer__copyright">
+            <h2 class="visually-hidden">Разработка</h2>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"
               ><img
-                src="./img/svg/vk.svg"
-                alt="Vkontakte"
-                with="32"
-                height="32"
+                src="/img/svg/logo-htmlacademy.svg"
+                alt="Логотип HTML Academy"
+                width="108"
+                height="39"
             /></a>
-          </li>
-          <li class="social-list__item">
-            <a href="" class="social-list__button" aria-label="Instagram"
-              ><img
-                src="./img/svg/instagram.svg"
-                alt="Instagram"
-                with="32"
-                height="32"
-            /></a>
-          </li>
-          <li class="social-list__item">
-            <a href="" class="social-list__button" aria-label="Twitter"
-              ><img
-                src="./img/svg/twitter.svg"
-                alt="Twitter"
-                with="32"
-                height="32"
-            /></a>
-          </li>
-        </ul>
-      </section>
-      <nav class="page-footer__navigation footer-navigation">
-        <ul class="footer-navigation__list">
-          <li class="footer-navigation__item">
-            <a
-              href=""
-              class="footer-navigation__link footer-navigation__link--resellers"
-              >Для поставщиков</a
-            >
-          </li>
-          <li class="footer-navigation__item">
-            <a href="" class="footer-navigation__link">Наши документы</a>
-          </li>
-          <li class="footer-navigation__item">
-            <a href="" class="footer-navigation__link">О производстве</a>
-          </li>
-          <li class="footer-navigation__item">
-            <a href="" class="footer-navigation__link"
-              >Экологические стандарты</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <section class="page-footer__copyright">
-        <h2 class="visually-hidden">Разработка</h2>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"
-          ><img
-            src="/img/svg/logo-htmlacademy.svg"
-            alt="Логотип HTML Academy"
-            width="108"
-            height="39"
-        /></a>
 
-        <p class="page-footer__developers">
-          Сделано в
-          <a
-            class="page-footer__developers--academy"
-            href="https://htmlacademy.ru/intensive/htmlcss"
-            target="_blank"
-            >HTML Academy</a
-          >
-          © 2019
-        </p>
-      </section>
+            <p class="page-footer__developers">
+              Сделано в
+              <a
+                class="page-footer__developers--academy"
+                href="https://htmlacademy.ru/intensive/htmlcss"
+                target="_blank"
+                >HTML Academy</a
+              >
+              © 2019
+            </p>
+          </section>
+        </div>
+      </div>
     </footer>
     <div class="feedback-form visually-hidden">
       <p>Мы обязательно вам ответим!</p>

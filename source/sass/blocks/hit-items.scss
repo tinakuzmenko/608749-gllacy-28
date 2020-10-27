@@ -1,9 +1,16 @@
 .hit-items {
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .hit-items__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 26px;
+}
+
+.hit-items__price {
+  margin: 0;
+  margin-top: -65px;
+  margin-bottom: 33px;
 }

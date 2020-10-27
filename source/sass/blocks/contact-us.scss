@@ -1,17 +1,36 @@
 .contact-us {
   color: #5a5a5a;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../img/bg-post.png");
+  padding: 5px;
+  border-radius: 16px;
+}
+
+.contact-us__main-wrapper {
   background-color: #f8f7f4;
   border-radius: 16px;
+  padding: 29px 16px 30px 20px;
 }
 
 .contact-us__description {
   line-height: 22px;
+  margin-top: 0;
+  margin-bottom: 37px;
+}
+
+.contact-us__form {
+  display: flex;
+  width: 100%;
 }
 
 .contact-us__input {
   background: #ffffff;
   border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 6px;
+  flex-grow: 1;
+  margin-right: 10px;
 }
 
 .contact-us__cta-button {

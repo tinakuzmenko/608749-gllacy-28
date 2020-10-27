@@ -1,13 +1,3 @@
-:root {
-  --bg-primary-color: #849d8f;
-  --bg-secondary-color: #8996a6;
-  --bg-third-color: #9d8b84;
-  --primary-font-color: #ffffff;
-  --secondary-font-color: #323232;
-
-  --main-font: "Roboto", "Arial", sans-serif;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -21,9 +11,9 @@ html {
 body {
   padding: 0;
   margin: 0;
-  background-color: var(--bg-primary-color);
-  font-family: var(--main-font);
-  color: var(--primary-font-color);
+  background-color: $bg-primary-color;
+  font-family: $main-font;
+  color: $primary-font-color;
   font-size: 16px;
   font-weight: normal;
 }
